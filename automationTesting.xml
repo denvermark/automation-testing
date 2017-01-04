@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationTesting">
+	<suite-files>
+		<suite-file path="automationTesting-Chrome.xml" />
+		
+		<!--  shitty firefox doesn't work
+		<suite-file path="automationTesting-Firefox.xml" />
+		-->
+		
+		<suite-file path="automationTesting-IE.xml" />
+	</suite-files>
+</suite> <!-- Suite -->
