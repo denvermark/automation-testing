@@ -12,6 +12,6 @@ public class MyAccountPage extends PageBase {
 	}
 
 	public WebElement getSignOutLink(){
-		return this.signOutLink;
+		return super.getSignOutLink();
 	}
 }

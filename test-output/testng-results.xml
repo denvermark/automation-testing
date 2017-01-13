@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="15" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AutomationTesting" duration-ms="0" started-at="2017-01-12T21:57:48Z" finished-at="2017-01-12T21:57:48Z">
+    <groups>
+    </groups>
+  </suite> <!-- AutomationTesting -->
+  <suite name="FirefoxAutomationTesting" duration-ms="27721" started-at="2017-01-12T21:56:50Z" finished-at="2017-01-12T21:57:17Z">
+    <groups>
+    </groups>
+    <test name="All_Tests" duration-ms="27721" started-at="2017-01-12T21:56:50Z" finished-at="2017-01-12T21:57:17Z">
+      <class name="tests.Login">
+        <test-method status="PASS" signature="beforeEveryClass(java.lang.String)[pri:0, instance:tests.Login@1bce4f0a]" name="beforeEveryClass" is-config="true" duration-ms="8746" started-at="2017-01-12T14:57:02Z" finished-at="2017-01-12T14:57:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.Login@1bce4f0a]" name="login" duration-ms="3132" started-at="2017-01-12T14:57:10Z" description="Test that logging in as a regular user finds the sign out link on the page." finished-at="2017-01-12T14:57:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterEveryTestMethod()[pri:0, instance:tests.Login@1bce4f0a]" name="afterEveryTestMethod" is-config="true" duration-ms="3809" started-at="2017-01-12T14:57:14Z" finished-at="2017-01-12T14:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestMethod -->
+      </class> <!-- tests.Login -->
+      <class name="tests.Home">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:tests.Home@3bfdc050]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2017-01-12T14:56:50Z" finished-at="2017-01-12T14:56:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeEveryClass(java.lang.String)[pri:0, instance:tests.Home@3bfdc050]" name="beforeEveryClass" is-config="true" duration-ms="8780" started-at="2017-01-12T14:56:50Z" finished-at="2017-01-12T14:56:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryClass -->
+        <test-method status="PASS" signature="findLogo()[pri:0, instance:tests.Home@3bfdc050]" name="findLogo" duration-ms="40" started-at="2017-01-12T14:56:58Z" description="Test that the logo exists and contains the correct image" finished-at="2017-01-12T14:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findLogo -->
+        <test-method status="PASS" signature="findSearchTextBox()[pri:0, instance:tests.Home@3bfdc050]" name="findSearchTextBox" duration-ms="1" started-at="2017-01-12T14:56:58Z" description="Test that the search textbox exists" finished-at="2017-01-12T14:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findSearchTextBox -->
+        <test-method status="PASS" signature="afterEveryTestMethod()[pri:0, instance:tests.Home@3bfdc050]" name="afterEveryTestMethod" is-config="true" duration-ms="3207" started-at="2017-01-12T14:56:58Z" finished-at="2017-01-12T14:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestMethod -->
+        <test-method status="PASS" signature="afterEverySuite()[pri:0, instance:tests.Home@3bfdc050]" name="afterEverySuite" is-config="true" duration-ms="671" started-at="2017-01-12T14:57:17Z" finished-at="2017-01-12T14:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEverySuite -->
+      </class> <!-- tests.Home -->
+    </test> <!-- All_Tests -->
+  </suite> <!-- FirefoxAutomationTesting -->
+  <suite name="ChromeAutomationTesting" duration-ms="29146" started-at="2017-01-12T21:56:19Z" finished-at="2017-01-12T21:56:49Z">
+    <groups>
+    </groups>
+    <test name="All_Tests" duration-ms="29146" started-at="2017-01-12T21:56:19Z" finished-at="2017-01-12T21:56:49Z">
+      <class name="tests.Login">
+        <test-method status="PASS" signature="beforeEveryClass(java.lang.String)[pri:0, instance:tests.Login@1d057a39]" name="beforeEveryClass" is-config="true" duration-ms="8774" started-at="2017-01-12T14:56:33Z" finished-at="2017-01-12T14:56:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.Login@1d057a39]" name="login" duration-ms="3149" started-at="2017-01-12T14:56:42Z" description="Test that logging in as a regular user finds the sign out link on the page." finished-at="2017-01-12T14:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterEveryTestMethod()[pri:0, instance:tests.Login@1d057a39]" name="afterEveryTestMethod" is-config="true" duration-ms="3886" started-at="2017-01-12T14:56:45Z" finished-at="2017-01-12T14:56:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestMethod -->
+      </class> <!-- tests.Login -->
+      <class name="tests.Home">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:tests.Home@475530b9]" name="beforeSuite" is-config="true" duration-ms="7" started-at="2017-01-12T14:56:19Z" finished-at="2017-01-12T14:56:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeEveryClass(java.lang.String)[pri:0, instance:tests.Home@475530b9]" name="beforeEveryClass" is-config="true" duration-ms="7843" started-at="2017-01-12T14:56:19Z" finished-at="2017-01-12T14:56:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryClass -->
+        <test-method status="PASS" signature="findLogo()[pri:0, instance:tests.Home@475530b9]" name="findLogo" duration-ms="50" started-at="2017-01-12T14:56:27Z" description="Test that the logo exists and contains the correct image" finished-at="2017-01-12T14:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findLogo -->
+        <test-method status="PASS" signature="findSearchTextBox()[pri:0, instance:tests.Home@475530b9]" name="findSearchTextBox" duration-ms="1" started-at="2017-01-12T14:56:27Z" description="Test that the search textbox exists" finished-at="2017-01-12T14:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findSearchTextBox -->
+        <test-method status="PASS" signature="afterEveryTestMethod()[pri:0, instance:tests.Home@475530b9]" name="afterEveryTestMethod" is-config="true" duration-ms="5419" started-at="2017-01-12T14:56:27Z" finished-at="2017-01-12T14:56:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestMethod -->
+        <test-method status="PASS" signature="afterEverySuite()[pri:0, instance:tests.Home@475530b9]" name="afterEverySuite" is-config="true" duration-ms="935" started-at="2017-01-12T14:56:49Z" finished-at="2017-01-12T14:56:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEverySuite -->
+      </class> <!-- tests.Home -->
+    </test> <!-- All_Tests -->
+  </suite> <!-- ChromeAutomationTesting -->
+  <suite name="IEAutomationTesting" duration-ms="28880" started-at="2017-01-12T21:57:18Z" finished-at="2017-01-12T21:57:47Z">
+    <groups>
+    </groups>
+    <test name="All_Tests" duration-ms="28880" started-at="2017-01-12T21:57:18Z" finished-at="2017-01-12T21:57:47Z">
+      <class name="tests.Login">
+        <test-method status="PASS" signature="beforeEveryClass(java.lang.String)[pri:0, instance:tests.Login@6d4b1c02]" name="beforeEveryClass" is-config="true" duration-ms="8364" started-at="2017-01-12T14:57:32Z" finished-at="2017-01-12T14:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryClass -->
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.Login@6d4b1c02]" name="login" duration-ms="3006" started-at="2017-01-12T14:57:40Z" description="Test that logging in as a regular user finds the sign out link on the page." finished-at="2017-01-12T14:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterEveryTestMethod()[pri:0, instance:tests.Login@6d4b1c02]" name="afterEveryTestMethod" is-config="true" duration-ms="3991" started-at="2017-01-12T14:57:43Z" finished-at="2017-01-12T14:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestMethod -->
+      </class> <!-- tests.Login -->
+      <class name="tests.Home">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:tests.Home@7cd62f43]" name="beforeSuite" is-config="true" duration-ms="1" started-at="2017-01-12T14:57:18Z" finished-at="2017-01-12T14:57:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeEveryClass(java.lang.String)[pri:0, instance:tests.Home@7cd62f43]" name="beforeEveryClass" is-config="true" duration-ms="8086" started-at="2017-01-12T14:57:18Z" finished-at="2017-01-12T14:57:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryClass -->
+        <test-method status="PASS" signature="findLogo()[pri:0, instance:tests.Home@7cd62f43]" name="findLogo" duration-ms="33" started-at="2017-01-12T14:57:26Z" description="Test that the logo exists and contains the correct image" finished-at="2017-01-12T14:57:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findLogo -->
+        <test-method status="PASS" signature="findSearchTextBox()[pri:0, instance:tests.Home@7cd62f43]" name="findSearchTextBox" duration-ms="1" started-at="2017-01-12T14:57:26Z" description="Test that the search textbox exists" finished-at="2017-01-12T14:57:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findSearchTextBox -->
+        <test-method status="PASS" signature="afterEveryTestMethod()[pri:0, instance:tests.Home@7cd62f43]" name="afterEveryTestMethod" is-config="true" duration-ms="5396" started-at="2017-01-12T14:57:26Z" finished-at="2017-01-12T14:57:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestMethod -->
+        <test-method status="PASS" signature="afterEverySuite()[pri:0, instance:tests.Home@7cd62f43]" name="afterEverySuite" is-config="true" duration-ms="667" started-at="2017-01-12T14:57:47Z" finished-at="2017-01-12T14:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEverySuite -->
+      </class> <!-- tests.Home -->
+    </test> <!-- All_Tests -->
+  </suite> <!-- IEAutomationTesting -->
+</testng-results>

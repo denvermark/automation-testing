@@ -12,7 +12,7 @@ public class LoginPage extends PageBase {
 		super(driver);
 	}
 
-	protected WebDriver driver;
+	//protected WebDriver driver;
 
 	@FindBy(how = How.ID, using = "email")
 	private WebElement username;

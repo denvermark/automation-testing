@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FirefoxAutomationTesting]">
+  <parameter name="browserType" value="Chrome"/>
+  <test name="All_Tests(failed)">
+    <classes>
+      <class name="tests.Login">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- tests.Login -->
+      <class name="tests.Home">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterEveryTestMethod"/>
+          <include name="beforeEveryClass"/>
+        </methods>
+      </class> <!-- tests.Home -->
+    </classes>
+  </test> <!-- All_Tests(failed) -->
+</suite> <!-- Failed suite [FirefoxAutomationTesting] -->
