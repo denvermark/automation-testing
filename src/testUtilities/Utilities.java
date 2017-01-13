@@ -22,13 +22,4 @@ public class Utilities {
 
 		return properties;
 	}
-
-	public static void WaitForPage(){
-		try {
-			Thread.sleep(1700);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-
 }

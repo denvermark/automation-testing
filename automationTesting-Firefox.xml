@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FirefoxAutomationTesting">
-	<parameter name="browserType" value="Firefox" />
-	<test name="Login">
-		<classes>
-			<class name="tests.Login" />
-		</classes>
-	</test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test name="All_Tests">
+		<packages>
+			<package name="tests" />
+		</packages>
+	</test>
+</suite>

@@ -23,7 +23,7 @@
 	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/jetty-util-9.2.13.v20150730.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/junit-4.12.jar" sourcepath="C:/Users/mjeffries/.m2/repository/junit/junit/4.12/junit-4.12-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/neko-htmlunit-2.23.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/netty-3.5.7.Final.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-3.0.1/lib/phantomjsdriver-1.3.0.jar"/>
