@@ -36,19 +36,19 @@ public abstract class TestBase {
 				// When using IE, turn of Protected Mode for all zones otherwise
 				// tests will fail
 				driverName = "webdriver.ie.driver";
-				driverPath = "C:\\Program Files (x86)\\eclipse\\IEDriverServer.exe";
+				driverPath = ".\\resources\\webDrivers\\IEDriverServer.exe";
 				System.setProperty(driverName, driverPath);
 				break;
 			case "Firefox":
 				driverName = "webdriver.gecko.driver";
-				driverPath = "C:\\Program Files (x86)\\eclipse\\geckoDriver.exe";
+				driverPath = ".\\resources\\webDrivers\\geckoDriver.exe";
 				System.setProperty(driverName, driverPath);
 				break;
 			case "Chrome":
 			default:
 				// use chrome as the default if none is passed.
 				driverName = "webdriver.chrome.driver";
-				driverPath = "C:\\Program Files (x86)\\eclipse\\ChromeDriver.exe";
+				driverPath = ".\\resources\\webDrivers\\ChromeDriver.exe";
 				System.setProperty(driverName, driverPath);
 				break;
 		}
