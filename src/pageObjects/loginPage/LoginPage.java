@@ -1,10 +1,11 @@
-package pageObjects;
+package pageObjects.loginPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import pageObjects.myAccountPage.MyAccountPage;
 import pageUtilities.PageBase;
 
 public class LoginPage extends PageBase {

@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.myAccountPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
