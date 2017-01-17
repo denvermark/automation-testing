@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
@@ -12,6 +13,9 @@ public class Login extends TestBase {
 	
 	@Test(description="Test that logging in as a regular user finds the sign out link on the page.")
 	public void login(){
+		//** 
+		//** Arrange
+		//**
 		String username = getProperties().getProperty("defaultUserName");
 		String password = getProperties().getProperty("defaultPassword");
 		
@@ -21,10 +25,16 @@ public class Login extends TestBase {
 		// click the login link and get sent to the login page
 		LoginPage loginPage = homePage.clickLogin();
 		
+		//**
+		//** Act
+		//**
 		// login through the login page
 		MyAccountPage myAccountPage = loginPage.login(username,  password);
 		
-		// assert
-		Assert.assertNotNull(myAccountPage.getSignOutLink());
+		//**
+		//**Assert
+		//**
+		WebElement link = myAccountPage.getSignOutLink();
+		Assert.assertNotNull("The sign out link now appears", link);
 	}
 }
