@@ -38,5 +38,4 @@
 	<classpathentry kind="lib" path="C:/eclipse/plugins/org.testng.eclipse_6.10.0.201612030230/lib/jcommander.jar"/>
 	<classpathentry kind="lib" path="C:/eclipse/plugins/org.testng.eclipse_6.10.0.201612030230/lib/testng.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
 </classpath>
