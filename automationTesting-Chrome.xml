@@ -3,7 +3,7 @@
 <suite name="ChromeAutomationTesting">
 	<test name="All_Tests">
 		<packages>
-			<package name="tests" />
+			<package name="tests.*" />
 		</packages>
 	</test>
 </suite>

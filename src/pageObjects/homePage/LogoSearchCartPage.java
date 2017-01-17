@@ -1,15 +1,16 @@
-package pageObjects;
+package pageObjects.homePage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import pageObjects.loginPage.LoginPage;
 import pageUtilities.PageBase;
 
-public class HomePage extends PageBase {
+public class LogoSearchCartPage extends PageBase {
 
-	public HomePage(WebDriver driver) {
+	public LogoSearchCartPage(WebDriver driver) {
 		super(driver);
 	}
 
