@@ -6,12 +6,12 @@
 		<suite-file path="automationTesting-Chrome.xml" />
 	</suite-files>
 	
-	<parameter name="browserType" value="Chrome" />
+	<parameter name="browserType" value="Firefox" />
 	<suite-files>
 		<suite-file path="automationTesting-Firefox.xml" />
 	</suite-files>
 	
-	<parameter name="browserType" value="Chrome" />
+	<parameter name="browserType" value="InternetExplorer" />
 	<suite-files>
 		<suite-file path="automationTesting-IE.xml" />
 	</suite-files>

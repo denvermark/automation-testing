@@ -11,7 +11,7 @@ public class Utilities {
 	public static WebElement getElement(WebDriver driver, By locator) {
 		WebElement element = null;
 
-		WebDriverWait wait = new WebDriverWait(driver, 3);
+		WebDriverWait wait = new WebDriverWait(driver, 1);
 		try {
 			element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 			return element;
