@@ -1,3 +1,5 @@
 .settings/
 test-output/
 bin/
+/bannertest.xml
+/BannerTestNG.xml
