@@ -1,9 +1,3 @@
 .settings/
 test-output/
-bin/
-/automationTesting-Chrome.xml
-/automationTesting-Firefox.xml
-/automationTesting-IE.xml
-/automationTesting.xml
-/footerTest.xml
-/FooterTestNG.xml
+bin/ 
