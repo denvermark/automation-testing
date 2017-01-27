@@ -32,6 +32,11 @@ public class BannerPage extends PageBase {
 		@FindBy (how = How.CLASS_NAME, using ="login")
 				WebElement loginLink;
 		
+		
+		//Telephone Number
+		@FindBy (how = How.XPATH, using ="//*[@id='header']/div[2]/div/div/nav/span/strong")
+			WebElement telephoneNumber;
+		
 		public WebElement getContactUs(){
 			return bannerLink;
 		}
@@ -51,7 +56,9 @@ public class BannerPage extends PageBase {
 			
 		}
 		
-		
+		public String getPhoneNumber(){
+			return telephoneNumber.getText();
+		}
 		
 		
 	}
