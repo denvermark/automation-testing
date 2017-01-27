@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import pageObjects.loginPage.LoginPage;
+
 import pageUtilities.PageBase;
 
 public class BannerPage extends PageBase {
@@ -44,6 +44,13 @@ public class BannerPage extends PageBase {
 		public String getContactUrl(){
 			return driver.getCurrentUrl();
 		}
+		
+		public void signInClick(){
+			
+			loginLink.click();
+			
+		}
+		
 		
 		
 		
