@@ -14,9 +14,9 @@ import testUtilities.TestBase;
 		@Test(description = "Click the Sign in link")
 		
 		public void signInLinkClick() {
-			//** 
-			//** Arrange
-			//**
+			
+			
+			
 			BannerPage bannerPage = new BannerPage(this.driver);
 			
 			

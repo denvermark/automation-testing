@@ -43,7 +43,11 @@ public class BannerPage extends PageBase {
 		}
 
 		public ContactUsPage contactClick() {
+			
 			ContactUsLink.click();
+			return new ContactUsPage(this.driver);
+			
+			
 			
 		}
 		
@@ -52,8 +56,8 @@ public class BannerPage extends PageBase {
 		}
 		
 		public SignInPage signInClick(){
-			
 			loginLink.click();
+			return new SignInPage(this.driver);
 			
 		}
 		
