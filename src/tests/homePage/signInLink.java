@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.BannerPage.BannerPage;
+import pageObjects.signInPage.SignInPage;
 import testUtilities.TestBase;
 
 
@@ -21,15 +22,11 @@ import testUtilities.TestBase;
 			
 			
 			
-			bannerPage.signInClick();
+			SignInPage signInLink = bannerPage.signInClick();
 			
-			//** 
-			//** Assert
-			//**
-			//Assert.assertNotNull(logo, "Logo exists");
-			//Assert.assertTrue(logo.getAttribute("src").contains("logo.jpg"), "Logo contains the correct image");
 			
-			Assert.assertEquals(bannerPage.getContactUrl(), "http://automationpractice.com/index.php?controller=authentication&back=my-account");
+			
+			Assert.assertEquals(signInLink.getContactUrl(), "http://automationpractice.com/index.php?controller=authentication&back=my-account");
 			
 			
 		}

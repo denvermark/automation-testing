@@ -22,4 +22,9 @@ public class ContactUsPage extends PageBase{
 			return breadcrumb.getText().equals("Contact");
 			
 	}
+	
+	
+	public String getContactUrl(){
+		return driver.getCurrentUrl();
+	}
 }
