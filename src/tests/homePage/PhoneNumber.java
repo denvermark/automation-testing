@@ -1,11 +1,9 @@
 package tests.homePage;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.BannerPage.BannerPage;
-import pageObjects.homePage.LogoSearchCartPage;
 import testUtilities.TestBase;
 
 
