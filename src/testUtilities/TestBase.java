@@ -27,33 +27,6 @@ public abstract class TestBase {
 		return properties;
 	}
 
-	@BeforeSuite
-	@Parameters({ "browserType" })
-	public void beforeSuite(String browserType) {
-		// setup our webdriver based on the type of browser
-		switch (browserType) {
-			case "InternetExplorer":
-				// When using IE, turn of Protected Mode for all zones otherwise
-				// tests will fail
-				driverName = "webdriver.ie.driver";
-				driverPath = ".\\resources\\webDrivers\\IEDriverServer.exe";
-				System.setProperty(driverName, driverPath);
-				break;
-			case "Firefox":
-				driverName = "webdriver.gecko.driver";
-				driverPath = ".\\resources\\webDrivers\\geckoDriver.exe";
-				System.setProperty(driverName, driverPath);
-				break;
-			case "Chrome":
-			default:
-				// use chrome as the default if none is passed.
-				driverName = "webdriver.chrome.driver";
-				driverPath = ".\\resources\\webDrivers\\ChromeDriver.exe";
-				System.setProperty(driverName, driverPath);
-				break;
-		}
-	}
-
 	@BeforeClass
 	@Parameters({ "browserType" })
 	public void beforeEveryClass(String browserType) {
@@ -63,14 +36,23 @@ public abstract class TestBase {
 			case "InternetExplorer":
 				// When using IE, turn of Protected Mode for all zones otherwise
 				// tests will fail
+				driverName = "webdriver.ie.driver";
+				driverPath = ".\\resources\\webDrivers\\IEDriverServer.exe";
+				System.setProperty(driverName, driverPath);
 				driver = new InternetExplorerDriver();
 				break;
 			case "Firefox":
+				driverName = "webdriver.gecko.driver";
+				driverPath = ".\\resources\\webDrivers\\geckoDriver.exe";
+				System.setProperty(driverName, driverPath);
 				driver = new FirefoxDriver();
 				break;
 			case "Chrome":
 			default:
 				// use chrome as the default if none is passed.
+				driverName = "webdriver.chrome.driver";
+				driverPath = ".\\resources\\webDrivers\\ChromeDriver.exe";
+				System.setProperty(driverName, driverPath);
 				driver = new ChromeDriver();
 				break;
 		}
@@ -82,7 +64,7 @@ public abstract class TestBase {
 	}
 
 	@AfterClass
-	public void afterEveryTestMethod() {
+	public void afterEveryClass() {
 		PageBase page = new PageBase(driver);
 		page.signOut();
 		page.closeWindow();
@@ -90,6 +72,6 @@ public abstract class TestBase {
 
 	@AfterSuite
 	public void afterEverySuite() {
-		driver.quit();
+		//driver.quit();
 	}
 }

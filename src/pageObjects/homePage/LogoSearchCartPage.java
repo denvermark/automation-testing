@@ -58,33 +58,42 @@ public class LogoSearchCartPage extends PageBase {
 		return searchResults;
 	}
 
-	public WebElement getSpecificSearchResult(List<WebElement> results, int productId){
-		String linkUrl = String.format("http://automationpractice.com/index.php?id_product=%d&controller=product&search_query=faded&results=1", productId);
-		List<WebElement> foundElements = new ArrayList<WebElement>();
-		
-		for (WebElement li: results){
-			List<WebElement> links = li.findElements(By.cssSelector("a[href='" + linkUrl + "']"));
-			if (links.size() > 0){
-				foundElements.add(li);
+	public WebElement getSpecificSearchResult(List<WebElement> results, String searchCriteria) {
+		String selector = String.format(
+				"//div[@class='product-container']//a[contains(translate(., '%1s', '%2s'), '%3s')]",
+				searchCriteria.toUpperCase(), 
+				searchCriteria.toLowerCase(), 
+				searchCriteria.toLowerCase());
+
+		/*
+		 * for (WebElement li : results) {
+		 * List<WebElement> products = li.findElements(By.xpath(selector));
+		 * if (products.size() > 0) {
+		 * foundElements.add(li);
+		 * }
+		 * }
+		 */
+
+		if (results.size() == 0) {
+			throw new NotFoundException("Could not find the element requested.");
+		} else if (results.size() > 1) {
+			throw new IndexOutOfBoundsException("Too many results were found.");
+		} else {
+			List<WebElement> items = results.get(0).findElements(By.xpath(selector));
+			if (items.size() != 1) {
+				throw new NotFoundException("The wrong results were returned.");
+			} else {
+				return items.get(0);
 			}
 		}
-		
-		if (foundElements.size() == 0){
-			throw new NotFoundException("Could not find the element requested");
-		} else if(foundElements.size() > 1){
-			throw new IndexOutOfBoundsException("Too many results were found.");
-		} else{
-			return foundElements.get(0);
-		}
-
 	}
 
 	public LoginPage clickLogin() {
 		signInLink.click();
 		return new LoginPage(driver);
 	}
-	
-	public CartPage clickCartButton(){
+
+	public CartPage clickCartButton() {
 		cartButton.click();
 		return new CartPage(driver);
 	}

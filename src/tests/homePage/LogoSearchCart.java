@@ -35,15 +35,19 @@ public class LogoSearchCart extends TestBase {
 		Assert.assertNotNull(searchTextBox, "Search textbox exists");
 	}
 
-	@Test(description = "Test that performing a search opens the search results page")
-	public void executeSearch() {
+	@Test(
+			dataProviderClass = dataProviders.SearchCriteriaDataProvider.class,
+			dataProvider = "searchCriteriaDataProvider",
+			description = "Test that performing a search opens the search results page")
+	public void executeSearch(String searchCriteria) {
 		// open the home page
 		LogoSearchCartPage homePage = new LogoSearchCartPage(this.driver);
 		// get the search textbox
 		WebElement searchTextBox = homePage.getSearchTextBox();
 		// enter search criteria
 		if (searchTextBox != null) {
-			searchTextBox.sendKeys("faded"); // should be in a config file somewhere - or probably a dataProvider
+			searchTextBox.clear();
+			searchTextBox.sendKeys(searchCriteria);
 		}
 		// get the search button
 		WebElement searchButton = homePage.getSearchButton();
@@ -57,7 +61,7 @@ public class LogoSearchCart extends TestBase {
 		// ensure that there is only one result
 		Assert.assertTrue(searchResults.size() == 1, "Search returned only one result");
 		// ensure that the correct product (productId=1) was returned
-		Assert.assertNotNull(homePage.getSpecificSearchResult(searchResults, 1), "Search returned the correct results");
+		Assert.assertNotNull(homePage.getSpecificSearchResult(searchResults, searchCriteria), "Search returned the correct results");
 	}
 
 	@Test(description = "Test that the shopping cart button exists")

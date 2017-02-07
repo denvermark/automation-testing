@@ -4,6 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import dataModels.User;
+import dataProviders.ExcelDataProvider;
+import dataProviders.ExcelDataProvider.DataProviderConfig;
 import pageObjects.homePage.LogoSearchCartPage;
 import pageObjects.loginPage.LoginPage;
 import pageObjects.myAccountPage.MyAccountPage;
@@ -11,10 +14,14 @@ import testUtilities.TestBase;
 
 public class Login extends TestBase {
 	
-	@Test(description="Test that logging in as a regular user finds the sign out link on the page.")
-	public void login(){
-		String username = getProperties().getProperty("defaultUserName");
-		String password = getProperties().getProperty("defaultPassword");
+	@Test(
+			dataProvider="xlsxDataProvider", 
+			dataProviderClass=ExcelDataProvider.class,
+			description="Test that logging in as a regular user finds the sign out link on the page.")
+	@DataProviderConfig({"Users.xlsx", "dataModels.User"})
+	public void login(User user){
+		String username = user.UserName;
+		String password = user.Password;
 		
 		// open home page
 		LogoSearchCartPage homePage = new LogoSearchCartPage(this.getDriver());

@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FirefoxAutomationTesting">
 	<test name="All_Tests">
+	<parameter name="browserType" value="Firefox" />
 		<packages>
 			<package name="tests.*" />
 		</packages>
