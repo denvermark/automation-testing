@@ -14,6 +14,7 @@ public class FooterLinks extends TestBase
 	  FooterPage footerPage = new FooterPage(this.driver);
 	  Assert.assertTrue(footerPage.verifyCategoriesLinks(), "Category links in footer are not as expected.");
 	  Assert.assertTrue(footerPage.verifyInformationLinks(),"Information links in footer are not as expected.");
+	  Assert.assertTrue(footerPage.validateFooterInformationList(),"Footer Information links are not as expected.");
   }
   
   @Test

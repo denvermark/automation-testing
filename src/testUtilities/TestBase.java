@@ -79,6 +79,7 @@ public abstract class TestBase {
 		// file, use the url below.
 		String url = properties.getProperty("baseUrl", "http://automationpractice.com");
 		driver.get(url);
+		driver.manage().window().maximize();
 	}
 
 	@AfterClass
